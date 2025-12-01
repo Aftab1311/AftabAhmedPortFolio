@@ -4,6 +4,7 @@ import NoiseOverlay from './components/NoiseOverlay';
 import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Marquee from './components/Marquee';
+import About from './components/About';
 import BentoGrid from './components/BentoGrid';
 import Experience from './components/Experience';
 import TechArsenal from './components/TechArsenal';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <Suspense fallback={<div className="h-screen w-full flex items-center justify-center font-mono text-neon">LOADING...</div>}>
         <Hero />
         <Marquee />
+        <About />
         <BentoGrid />
         <TechArsenal />
         <Experience />
