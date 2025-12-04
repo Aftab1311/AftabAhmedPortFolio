@@ -5,11 +5,11 @@ import { ExperienceItem } from '../types';
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    role: "Senior Full Stack Engineer",
-    company: "NEXUS_LABS",
-    period: "2023 — PRESENT",
+    role: "Senior Development Engineer - 1",
+    company: "TRUWIX TECH PVT LTD",
+    period: "2025 — PRESENT",
     description: [
-      "Architected a microservices-based e-commerce platform handling 50k+ monthly active users.",
+      "Architected a microservices-based e-commerce platform handling 10k+ monthly active users.",
       "Led a team of 4 developers, implementing CI/CD pipelines reducing deployment time by 40%.",
       "Optimized React performance using virtualization and memoization, improving LCP by 1.2s."
     ],
@@ -17,9 +17,9 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: 2,
-    role: "Frontend Developer",
-    company: "AERO_DIGITAL",
-    period: "2021 — 2023",
+    role: "FULL STACK DEVELOPER",
+    company: "CAMPAIGNING SOURCE",
+    period: "2023 — 2024",
     description: [
       "Developed interactive 3D product configurators using Three.js and React Fiber.",
       "Collaborated with UI/UX designers to implement pixel-perfect, accessible interfaces.",
@@ -29,9 +29,9 @@ const experiences: ExperienceItem[] = [
   },
   {
     id: 3,
-    role: "Junior Web Developer",
+    role: "JUNIOR FRONTEND DEVELOPER",
     company: "FREELANCE / CONTRACT",
-    period: "2020 — 2021",
+    period: "2022 — 2023",
     description: [
       "Built custom MERN stack applications for local businesses and startups.",
       "Implemented secure authentication flows using JWT and OAuth.",
