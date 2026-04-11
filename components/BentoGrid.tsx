@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Project } from '../types';
+import neo from "../components/assets/neo.png"; // Replace with actual image path
 
 const projects: Project[] = [
   {
@@ -9,8 +10,8 @@ const projects: Project[] = [
     category: "Full Stack",
     description: "Headless Shopify alternative built with Next.js 14 and Stripe.",
     tags: ["Next.js", "Stripe", "Zustand"],
-    link: "#",
-    image: "https://picsum.photos/800/600?grayscale",
+    link: "https://neo-commerce-main.vercel.app/",
+    image: neo,
     featured: true
   },
   {
@@ -52,7 +53,7 @@ const BentoCard: React.FC<{ project: Project; className?: string }> = ({ project
       whileHover={{ y: -5 }}
       className={`group relative overflow-hidden bg-[#222] border border-white/5 rounded-3xl p-6 flex flex-col justify-between ${className}`}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10" />
+      <div className="" onClick={() => window.open(project.link, "_blank")} style={{ cursor: 'pointer' }} >
       <img 
         src={project.image} 
         alt={project.title} 
@@ -84,6 +85,7 @@ const BentoCard: React.FC<{ project: Project; className?: string }> = ({ project
       
       {/* Hover Glow Effect */}
       <div className="absolute -inset-1 bg-gradient-to-r from-neon/0 via-neon/20 to-neon/0 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500 z-0" />
+      </div>
     </motion.div>
   );
 };
